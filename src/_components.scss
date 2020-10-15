@@ -1,0 +1,87 @@
+@import "./App.scss";
+
+.header {
+	font-size: 1.4rem;
+	height: 6rem;
+	background-color: #150a0b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: -4.6rem -3rem;
+	border-radius: 3px 3px 0 0;
+}
+
+.logo {
+	display: flex;
+	padding-left: 2rem;
+	color: red;
+
+	&__head {
+		font-family: "Piedra", cursive;
+		font-size: 3.2rem;
+		word-spacing: 0.4rem;
+		color: white !important;
+	}
+}
+
+.search {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+
+	&__button {
+		border: none;
+		background-color: #150a0b;
+		color: white;
+		text-decoration: none;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__input {
+		//input property doesn't inherit global font property;
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		background-color: $grey-light-2;
+		border: none;
+		padding: 0.7rem 2rem;
+		border-radius: 2px;
+		height: 2.5rem;
+		width: 30rem;
+		transition: all 0.2s;
+		transform: scale(0.95);
+
+		&:focus {
+			outline: none;
+			color: inherit;
+			background-color: $grey-light-3;
+			transform: scale(0.92);
+		}
+
+		&::-webkit-input-placeholder {
+			font-weight: 100;
+			color: $grey-light-4;
+		}
+	}
+
+	&__icon {
+		color: white;
+		margin-left: -0.4rem;
+	}
+}
+
+.fav_Icon {
+	color: white;
+	margin-right: 2rem;
+	width: 70%;
+	height: 70%;
+}
+
+.favorites {
+	color: white;
+	margin-right: 2rem;
+	height: 7.6rem !important;
+}
